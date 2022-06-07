@@ -1,8 +1,122 @@
+/* File name: MyFirstPortfolio
+   Name: Avalon Stanley
+   Student Id: 300 849 734
+   Date: June 2, 2022 */
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.h1-landing{
+  text-align: center;
+  font-size: 150px;
+  letter-spacing: -13px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+}
+
+.navbar-brand{
+  display: block;
+  margin-left: 20px;
+  margin-right: auto;
+  width: 0%;
+}
+
+.navbar-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0%;
+}
+
+.navbar-custom{
+  background-color: rgba(224,196,173);
+}
+
+.navbar-nav{
+  margin-right: 25px;
+}
+
+.nav-item:hover{
+  font-weight: bolder;
+}
+
+.aboutMePic{
+  display: block;
+  margin-top: -80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.aboutMePic-brown{
+  background-color: rgba(224,196,173);
+  height: 250px;
+}
+
+.aboutMeContent{
+  margin-top: 100px;
+  text-align: center;
+}
+
+h2, h3{
+  text-align: center;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+h3{
+  padding-top: 5%;
+  padding-bottom: 20px;
+}
+
+footer{
+  padding-top: 50px;
+  text-align: center;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgba(224,196,173);
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(139,85,55);
+}
+
+.container {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 320px;
+}
+
+.div1{
+  width: 45%;
+  display: inline-block;
+  padding-right: 10px;
+}
+.div2{
+  width: 45%;
+  float: right;
 }
