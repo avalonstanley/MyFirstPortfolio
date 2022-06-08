@@ -40,7 +40,7 @@ function services (req, res, next) {
 
 function contact (req, res, next) {
   res.render(
-    'contact', { title: 'Projects', userName: 'Avalon' });
+    'contact', { title: 'Projects', heading: 'Give me a shout.' });
 };
 
 module.exports = router;
