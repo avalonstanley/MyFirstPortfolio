@@ -115,6 +115,18 @@ body.home-bg{
   position: static;
   margin-top: 13%;
 }
+a:link {
+  color: rgba(224,196,173);
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight:normal;
+}
+a:hover {
+  color: rgb(139,85,55);
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 
 /* Contact Page */
@@ -155,18 +167,7 @@ input[type=submit]:hover {
   width: 45%;
   float: right;
 }
-a:link {
-  color: rgba(224,196,173);
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight:normal;
-}
-a:hover {
-  color: rgb(139,85,55);
-  background-color: transparent;
-  text-decoration: underline;
-}
+
 
 /* Projects/Services */
 .member {
