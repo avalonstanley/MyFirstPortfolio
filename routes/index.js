@@ -9,11 +9,13 @@ router.get('/projects', projects);
 router.get('/services', services);
 router.get('/contact', contact);
 
+
 function landing (req, res, next) {
   res.render(
     'landing', { title: 'Hello.', userName: 'Avalon' });
 };
 
+/* TO DO */
 function home (req, res, next) {
   res.render(
     'home', { title: 'Home Page', userName: 'Avalon' });
@@ -24,14 +26,16 @@ function about (req, res, next) {
     'about', { title: 'About', userName: 'Avalon' });
 };
 
+/* TO DO */
 function projects (req, res, next) {
   res.render(
-    'index', { title: 'Projects', userName: 'Avalon' });
+    'projectsServices', { title: 'Projects', userName: 'Avalon' });
 };
 
+/* TO DO */
 function services (req, res, next) {
   res.render(
-    'index', { title: 'Projects', userName: 'Avalon' });
+    'projectsServices', { title: 'Projects', userName: 'Avalon' });
 };
 
 function contact (req, res, next) {

@@ -19,6 +19,14 @@ a {
   margin-top: 80px;
 }
 
+.h1-home{
+  text-align: left;
+  font-size: 80px;
+  letter-spacing: -8px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+}
+
 .navbar-brand{
   display: block;
   margin-left: 20px;
@@ -41,8 +49,10 @@ a {
   margin-right: 25px;
 }
 
-.nav-item:hover{
-  font-weight: bolder;
+.navbar-nav .nav-item:hover .nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .aboutMePic{
@@ -61,23 +71,24 @@ a {
 .aboutMeContent{
   margin-top: 100px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 82%;
+  font-weight: lighter;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-size: 12px;
 }
 
 h2, h3{
   text-align: center;
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  padding-bottom: 10px;
 }
 
 h3{
   padding-top: 5%;
   padding-bottom: 20px;
 }
-
-footer{
-  padding-top: 50px;
-  text-align: center;
-}
-
 
 input[type=text], select, textarea {
   width: 100%;
@@ -119,4 +130,70 @@ input[type=submit]:hover {
 .div2{
   width: 45%;
   float: right;
+}
+
+body.home-bg{
+  background: url(/images/beach.jpg) no-repeat center center fixed; 
+
+}
+
+a:link {
+  color: rgba(224,196,173);
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight:normal;
+}
+
+a:hover {
+  color: rgb(139,85,55);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: -auto;
+  padding: 20px 50px 2px 50px;
+  width: 100%;
+  background-color: rgba(224,196,173);
+  color: white;
+  text-align: right;
+  font-size: 10px;
+  position:relative;
+}
+
+.footer-home{
+  padding: 20px 50px 2px 50px;
+  width: 100%;
+  background-color: rgba(224,196,173);
+  color: white;
+  text-align: right;
+  font-size: 10px;
+  position:absolute;
+  height:60px;
+  bottom:0;
+}
+
+.member {
+  display: inline-block;
+  width:31%;
+  vertical-align: top;
+  text-align:center;
+  padding-left: 20px;
+}
+.name {
+  display: inline;
+  margin-top: 100px;
+}
+.member img {
+  width: 100%;
+  display: block;
+}
+
+#placeholders{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
