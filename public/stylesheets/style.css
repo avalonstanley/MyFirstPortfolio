@@ -1,16 +1,23 @@
 /* File name: MyFirstPortfolio
    Name: Avalon Stanley
    Student Id: 300 849 734
-   Date: June 2, 2022 */
+   Date: June 6, 2022 */
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
-a {
-  color: #00B7FF;
+h2, h3{
+  text-align: center;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  padding-bottom: 10px;
 }
 
+h3{
+  padding-top: 5%;
+  padding-bottom: 20px;
+}
+
+/* Landing Page */
 .h1-landing{
   text-align: center;
   font-size: 150px;
@@ -19,6 +26,32 @@ a {
   margin-top: 80px;
 }
 
+/* NavBar */
+.navbar-brand{
+  display: block;
+  margin-left: 20px;
+  margin-right: auto;
+  width: 0%;
+}
+.navbar-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0%;
+}
+.navbar-custom{
+  background-color: rgba(224,196,173);
+}
+.navbar-nav{
+  margin-right: 25px;
+}
+.navbar-nav .nav-item:hover .nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Home Page */
 .h1-home{
   text-align: left;
   font-size: 60px;
@@ -28,7 +61,6 @@ a {
   color: white;
   padding-left: 20px;
 }
-
 .h2-home{
   text-align: left;
   font-size: 30px;
@@ -37,56 +69,30 @@ a {
   padding-left: 20px;
   color: white;
 }
+body.home-bg{
+  background: url(/images/beach.jpg) no-repeat center center fixed; 
 
-.navbar-brand{
-  display: block;
-  margin-left: 20px;
-  margin-right: auto;
-  width: 0%;
 }
 
-.navbar-logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 0%;
-}
 
-.navbar-custom{
-  background-color: rgba(224,196,173);
-}
-
-.navbar-nav{
-  margin-right: 25px;
-}
-
-.navbar-nav .nav-item:hover .nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* About Page */
 .aboutMePic{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-
 }
-
 .content{
   position: relative;
   width: 100%;
   height:auto;
 }
-
 .aboutMePic-brown{
   background-color: rgba(224,196,173);
   height: 150px;
   width: 100%;
   position: relative;
 }
-
 .aboutMePic{
   z-index:1;
   top: 20px;
@@ -98,7 +104,6 @@ a {
   right: 0;
   text-align: center;
 }
-
 .aboutMeContent{
   text-align: center;
   margin-left: auto;
@@ -111,17 +116,8 @@ a {
   margin-top: 13%;
 }
 
-h2, h3{
-  text-align: center;
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  padding-bottom: 10px;
-}
 
-h3{
-  padding-top: 5%;
-  padding-bottom: 20px;
-}
-
+/* Contact Page */
 input[type=text], select, textarea {
   width: 100%;
   padding: 4px;
@@ -132,7 +128,6 @@ input[type=text], select, textarea {
   margin-bottom: 10px;
   resize: vertical;
 }
-
 input[type=submit] {
   background-color: rgba(224,196,173);
   color: white;
@@ -141,11 +136,9 @@ input[type=submit] {
   cursor: pointer;
   float: right;
 }
-
 input[type=submit]:hover {
   background-color: rgb(139,85,55);
 }
-
 .container {
   width: 100%;
   border-radius: 5px;
@@ -153,7 +146,6 @@ input[type=submit]:hover {
   padding: 20px;
   height: 320px;
 }
-
 .div1{
   width: 45%;
   display: inline-block;
@@ -163,12 +155,6 @@ input[type=submit]:hover {
   width: 45%;
   float: right;
 }
-
-body.home-bg{
-  background: url(/images/beach.jpg) no-repeat center center fixed; 
-
-}
-
 a:link {
   color: rgba(224,196,173);
   background-color: transparent;
@@ -176,26 +162,23 @@ a:link {
   font-size: 15px;
   font-weight:normal;
 }
-
 a:hover {
   color: rgb(139,85,55);
   background-color: transparent;
   text-decoration: underline;
 }
 
-.footer {
-  margin-top: 50px;
-  padding: 20px 25px 12px 50px;
-  width: 100%;
-  background-color: rgba(224,196,173);
-  color: white;
-  text-align: right;
+/* Projects/Services */
+.member {
+  text-align:left;
   font-size: 10px;
-  float: bottom;
+  width: 150px;
 }
 
-.member {
-  text-align:center;
+.member:hover{
+  color: rgba(224,196,173);
+  opacity:0.8;
+  
 }
 
 #placeholders{
@@ -206,4 +189,16 @@ a:hover {
   gap: 15px;
   grid-auto-flow: column;
   margin-top: 5%;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding: 20px 25px 12px 50px;
+  width: 100%;
+  background-color: rgba(224,196,173);
+  color: white;
+  text-align: right;
+  font-size: 10px;
+  float: bottom;
 }

@@ -1,32 +1,32 @@
 <!-- Projects/Services -->
 
-    <%- include partials/header -%>
+    <%- include partials/nav -%>
 
-    <%- include partials/title -%>
+    <%- include partials/heading -%>
 
     <div id="placeholders">
        <div class="member">
-            <embed src="/images/PigsFly.pdf" width="150px" height="150px" />
-            <div class="name">Name
-                <br />Description
+        <a href= <%= div1Link %> target="_blank"><embed src= <%= div1 %> width="150px" height="150px" /></a>
+            <div class="name"><br><span style="font-size: 14px; text-align: center;"><b><%= div1Name %></b></span><br>
+                <br /> <%= div1Text %>
             </div>
         </div>
        <div class="member">
-            <img src="/images/ProtectedAreasAssignment.JPG" alt="Girl in a jacket" width="150px" height="150px">
-            <div class="name">Name
-                <br />Description
+        <a href= <%= div2Link %> target="_blank"><embed src= <%= div2 %> width="150px" height="150px"></a>
+            <div class="name"><br><span style="font-size: 14px; text-align: center;"><b><%= div2Name %></b></span><br>
+                <br /><%= div2Text %>
             </div>
         </div>
        <div class="member">
-        <img src="/images/CanadaGooseProductPage.JPG" alt="Girl in a jacket" width="150px" height="150px">
-            <div class="name">Name
-                <br />Description
+        <a href= <%= div3Link %> target="_blank"><embed src= <%= div3 %> width="150px" height="150px"></a>
+            <div class="name"><br><span style="font-size: 14px; text-align: center;"><b><%= div3Name %></b></span><br>
+                <br /><%= div3Text %>
             </div>
        </div>
        <div class="member">
-        <img src="/images/RealtorPageProject.JPG" alt="Girl in a jacket" width="150px" height="150px">
-            <div class="name">Name
-                <br />Description
+        <a href= <%= div4Link %> target="_blank"><embed src= <%= div4 %> width="150px" height="150px"></a>
+            <div class="name"><br><span style="font-size: 14px; text-align: center;"><b><%= div4Name %></b></span><br>
+                <br /><%= div4Text %>
             </div>
        </div>
    </div>
