@@ -72,7 +72,7 @@ function services (req, res, next) {
     'projectsServices', 
     { 
       title: 'Services', 
-      heading: "I'm still learning, but can definitely help...",
+      heading: "Some of the services I hope to offer soon...",
       div1Link: '/contact',
       div1: '/images/webdev.png',
       div1Name: 'General Programming',

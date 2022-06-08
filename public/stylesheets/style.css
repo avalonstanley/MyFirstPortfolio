@@ -3,8 +3,11 @@
    Student Id: 300 849 734
    Date: June 6, 2022 */
 
-body {
+html, body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 h2, h3{
   text-align: center;
@@ -12,30 +15,35 @@ h2, h3{
   padding-bottom: 10px;
 }
 
+h2{
+  font-size: 45px;
+}
+
 h3{
   padding-top: 5%;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
+  font-size: 40px;
 }
 
 /* Landing Page */
 .h1-landing{
   text-align: center;
-  font-size: 150px;
+  font-size: 350px;
   letter-spacing: -8px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 80px;
+  margin-top: 200px;
+}
+.navbar-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
 }
 
 /* NavBar */
 .navbar-brand{
   display: block;
-  margin-left: 20px;
-  margin-right: auto;
-  width: 0%;
-}
-.navbar-logo{
-  display: block;
-  margin-left: auto;
+  margin-left: 80px;
   margin-right: auto;
   width: 0%;
 }
@@ -43,45 +51,44 @@ h3{
   background-color: rgba(224,196,173);
 }
 .navbar-nav{
-  margin-right: 25px;
+  margin-right: 100px;
+  gap: 15px;
 }
 .navbar-nav .nav-item:hover .nav-link {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
+.navbar-dark .navbar-nav .nav-link{
+  font-size: 25px;
+}
 
 /* Home Page */
 .h1-home{
   text-align: left;
-  font-size: 60px;
+  font-size: 130px;
   letter-spacing: -1px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 80px;
+  margin-top: 180px;
   color: white;
-  padding-left: 20px;
+  padding-left: 80px;
 }
 .h2-home{
   text-align: left;
-  font-size: 30px;
+  font-size: 60px;
   letter-spacing: -1px;
   font-family: Arial, Helvetica, sans-serif;
-  padding-left: 20px;
+  padding-left: 80px;
   color: white;
 }
 body.home-bg{
-  background: url(/images/beach.jpg) no-repeat center center fixed; 
-
+  background: url(/images/beach.jpg);
+  background-repeat: no-repeat;
+  background-size : 100% 100%; 
 }
 
 
 /* About Page */
-.aboutMePic{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
 .content{
   position: relative;
   width: 100%;
@@ -89,14 +96,14 @@ body.home-bg{
 }
 .aboutMePic-brown{
   background-color: rgba(224,196,173);
-  height: 150px;
+  height: 250px;
   width: 100%;
   position: relative;
 }
 .aboutMePic{
   z-index:1;
   top: 20px;
-  width: 200px;
+  width: 400px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -111,15 +118,15 @@ body.home-bg{
   width: 82%;
   font-weight: lighter;
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  font-size: 12px;
+  font-size: 22px;
   position: static;
-  margin-top: 13%;
+  margin-top: 16%;
 }
 a:link {
   color: rgba(224,196,173);
   background-color: transparent;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 28px;
   font-weight:normal;
 }
 a:hover {
@@ -136,8 +143,8 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   resize: vertical;
 }
 input[type=submit] {
@@ -147,6 +154,7 @@ input[type=submit] {
   border: none;
   cursor: pointer;
   float: right;
+  font-size: 22px;
 }
 input[type=submit]:hover {
   background-color: rgb(139,85,55);
@@ -156,12 +164,16 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  height: 320px;
+  height: 360px;
+  margin-bottom: -100px;
 }
 .div1{
   width: 45%;
   display: inline-block;
   padding-right: 10px;
+}
+.div1 label, .div2 label{
+  font-size: 18px;
 }
 .div2{
   width: 45%;
@@ -172,34 +184,35 @@ input[type=submit]:hover {
 /* Projects/Services */
 .member {
   text-align:left;
-  font-size: 10px;
-  width: 150px;
+  font-size: 20px;
+  width: 250px;
 }
-
 .member:hover{
   color: rgba(224,196,173);
-  opacity:0.8;
-  
+  opacity:0.8; 
 }
-
 #placeholders{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  gap: 15px;
+  gap: 105px;
   grid-auto-flow: column;
   margin-top: 5%;
+}
+.name{
+  text-align:center;
 }
 
 /* Footer */
 .footer {
-  margin-top: 50px;
-  padding: 20px 25px 12px 50px;
+  padding: 30px 25px 2px 0px;
   width: 100%;
   background-color: rgba(224,196,173);
   color: white;
   text-align: right;
-  font-size: 10px;
-  float: bottom;
+  font-size: 20px;
+  height:150px;
+  position: relative;
+  margin-top: 15%;
 }
