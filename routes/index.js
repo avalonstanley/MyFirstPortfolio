@@ -28,7 +28,7 @@ function home (req, res, next) {
   res.render(
     'home', 
     { 
-      title: 'Home Page', userName: 'Avalon'
+      title: 'Home', userName: 'Avalon'
     });
 };
 
@@ -96,7 +96,7 @@ function contact (req, res, next) {
   res.render(
     'contact', 
     { 
-      title: 'Projects', 
+      title: 'Contact', 
       heading: 'Give me a shout.' 
     });
 };
