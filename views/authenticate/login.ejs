@@ -1,0 +1,39 @@
+<%- include ../partials/nav -%>
+<%- include ../partials/heading -%>
+<div class="container-login">
+    <div class="row">
+
+        <div class="row justify-content-center">
+            <div class="col-4">
+            <% for(var i in messages) { %>
+                <div class="flash"><%= messages[i] %></div>
+            <% } %>
+            <form action="/users/login" method="post">
+                <div class="form-group">
+                    <label class="lbl-login">Username:</label>
+                    <input type="text" name="username" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="lbl-login">Password:</label>
+                    <input type="password" name="password" class="form-control"/>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Login" />                    
+                </div>
+                <br>
+                <div class="form-group">
+                    <a href="/users/signup" style="text-decoration: none">                
+                        <i class="fas fa-user-plus"></i> 
+                        Signup
+                    </a>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div>
+                        
+        </div>
+    </div>
+</div>
+<%- include ../partials/footer -%>

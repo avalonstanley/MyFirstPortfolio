@@ -61,5 +61,24 @@
         <%} %>
         Contact Me</a>
       </li>
-  </nav>
+
+       
+        <% if (typeof userName == 'string' && userName) { %>
+          <li class="nav-item">
+            <% if(title == "List of Contacts") {%>
+              <a class="nav-link active" href="/users/list">
+            <%} else {%>
+            <a class="nav-link" href="/users/list">
+            <%} %>
+          Contacts </a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="/users/logout" onclick="return confirm('Are you sure?')"><i class="fa fa-door-open"></i> Logout (<%= userName %>)</a>
+          </li>
+          <% } else { %>
+          <a class="nav-link" href="/users/login"><i class="fa fa-door-closed"></i> Login</a>
+        <% } %>            
+
+
+    </nav>
 

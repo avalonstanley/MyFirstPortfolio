@@ -25,10 +25,12 @@ function landing (req, res, next) {
 
 
 function home (req, res, next) {
+  console.log('===> Original URL: ' + req.session.url);
   res.render(
     'home', 
     { 
-      title: 'Home', userName: 'Avalon'
+      title: 'Home', 
+      userName: req.user ? req.user.username:''
     });
 };
 
@@ -36,7 +38,8 @@ function about (req, res, next) {
   res.render(
     'about', 
     { 
-      title: 'About'
+      title: 'About',
+      userName: req.user ? req.user.username:''
     });
 };
 
@@ -62,7 +65,8 @@ function projects (req, res, next) {
       div4Link: 'http://studentweb.cencol.ca/astanle5/Week11Project/home.html',
       div4: '/images/RealtorPageProject.JPG',
       div4Name: "Realtor's Personal Website",
-      div4Text: 'Yet another assignment was given in which I was tasked with creating a logo, branding, and functional website to showcase a realtor (fictional), and his/her listings.'
+      div4Text: 'Yet another assignment was given in which I was tasked with creating a logo, branding, and functional website to showcase a realtor (fictional), and his/her listings.',
+      userName: req.user ? req.user.username:''
     });
 };
 
@@ -88,7 +92,8 @@ function services (req, res, next) {
       div4Link: '/contact',
       div4: '/images/sql.png',
       div4Name: "SQL Development",
-      div4Text: ''
+      div4Text: '',
+      userName: req.user ? req.user.username:''
     });
 };
 
@@ -97,8 +102,10 @@ function contact (req, res, next) {
     'contact', 
     { 
       title: 'Contact', 
-      heading: 'Give me a shout.' 
+      heading: 'Give me a shout.',
+      userName: req.user ? req.user.username:''
     });
 };
+
 
 module.exports = router;
