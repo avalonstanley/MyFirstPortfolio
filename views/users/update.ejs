@@ -1,0 +1,68 @@
+<%- include ../partials/nav -%>
+<%- include ../partials/heading -%>
+
+<!-- Content for the Update page -->
+<div class="container-login">
+    <div class="row">
+        <div class="row justify-content-center">
+            <div class="col-4">
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <input type="hidden"
+                        name="id"
+                        value="<%= contact._id %>"
+                    >
+
+                    <label for="carTextField">First Name: </label>
+                    <input type="text" class="form-control"
+                        id="firstNameTextField"
+                        name="firstName" 
+                        value="<%= contact.firstName %>"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="lastNameTextField">Last Name: </label>
+                    <input type="text" class="form-control"
+                        id="lastNameTextField"
+                        name="lastName" 
+                        value="<%= contact.lastName %>"
+                        >
+                </div>
+                <br />
+               
+                <div class="form-group">
+                    <label for="phoneNumberTextField">Phone Number: </label>
+                    <input type="number" class="form-control"
+                        id="phoneNumberTextField"
+                        name="phoneNumber" 
+                        value="<%= contact.phoneNumber %>"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="emailTextField">Email: </label>
+                    <input type="email"
+                    class="form-control"
+                    id="emailTextField"
+                    name="email" 
+                    value="<%= contact.email %>"
+                    required>
+                </div>
+
+                <br/>
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> 
+                    Update
+                </button>
+                
+                <a href="/users/list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> 
+                    Cancel
+                </a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include ../partials/footer -%>

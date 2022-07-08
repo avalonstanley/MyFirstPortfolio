@@ -155,6 +155,8 @@ input[type=submit] {
   cursor: pointer;
   float: right;
   font-size: 22px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 input[type=submit]:hover {
   background-color: rgb(139,85,55);
@@ -215,4 +217,70 @@ input[type=submit]:hover {
   height:150px;
   position: relative;
   margin-top: 15%;
+}
+
+.flash{
+  color: red;
+}
+
+/* Login Page */
+.container-login {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 25%;
+  margin-right: auto;
+}
+
+.lbl-login{
+  padding-bottom: 20px;
+}
+
+.btn btn-primary{
+  padding-top: 20px;
+}
+
+.form-group label{
+  font-size: 18px;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+tr {
+  line-height: 25px;
+  min-height: 25px;
+  height: 25px;
+  
 }
